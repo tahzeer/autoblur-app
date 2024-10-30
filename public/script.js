@@ -4,14 +4,14 @@ function autoblur() {
     document.head.appendChild(style);
     
     style.sheet.insertRule(`
-        input[type="password"] {
+        input {
             filter: blur(5px) !important;
             -webkit-filter: blur(5px) !important;
         }
     `, 0);
     
     style.sheet.insertRule(`
-        input[type="password"]:hover {
+        input:hover {
             filter: blur(0) !important;
             -webkit-filter: blur(0) !important;
         }
@@ -20,11 +20,11 @@ function autoblur() {
 
 autoblur();
 
-// for dynamic fields
+// look dynamic fields
 const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
         if (mutation.addedNodes.length) {
-            addBlurToPasswordFields();
+            autoblur();
         }
     });
 });

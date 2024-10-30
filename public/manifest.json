@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Autoblur",
   "version": "0.1",
-  "description": "Automatically blur sensitive informations on webpages",
+  "description": "Automatically blurs input fields on webpages",
   "icons": {
     "48": "icon/icon-48.png",
     "128": "icon/icon-128.png"
