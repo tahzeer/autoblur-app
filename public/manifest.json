@@ -8,9 +8,6 @@
     "128": "icon/icon-128.png"
   },
   "options_page": "index.html",
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
       "js": [
